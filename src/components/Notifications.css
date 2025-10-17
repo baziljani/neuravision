@@ -1,0 +1,38 @@
+.notifications {
+  flex: 0.6;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: #e2e8f0;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.15);
+  transition: 0.4s ease;
+}
+
+.notifications:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.4);
+}
+
+.notifications h3 {
+  margin-bottom: 1rem;
+  color: #ff99ff;
+}
+
+.notifications ul {
+  list-style: none;
+}
+
+.notifications li {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 0.8rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.notifications li:hover {
+  transform: translateX(8px);
+  background: linear-gradient(90deg, #ff6bcb, #ffa8ff);
+  color: #fff;
+}

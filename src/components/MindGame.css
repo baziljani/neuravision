@@ -1,0 +1,154 @@
+.mind-game {
+  padding: 20px;
+  background: linear-gradient(145deg, #1a1f2c, #232934);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  min-height: 70vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+select {
+  background: #2a2f3a;
+  border: 1px solid #3a3f4a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.game-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.stat {
+  background: rgba(0, 230, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.color-button {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.color-button.red { background-color: #ff4444; }
+.color-button.blue { background-color: #4444ff; }
+.color-button.green { background-color: #44ff44; }
+.color-button.yellow { background-color: #ffff44; }
+
+.color-button.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px 8px #fff, 0 0 20px 4px currentColor;
+  border: 3px solid #fff;
+  z-index: 2;
+}
+
+.color-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.game-controls {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.how-to-play {
+  background: rgba(255,255,255,0.02);
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  color: #cbd5e1;
+}
+
+.how-to-play ol {
+  margin: 8px 0 0 18px;
+}
+
+.small-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.small-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chart-placeholder {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  background: rgba(0,0,0,0.12);
+  border-radius: 10px;
+}
+
+.start-button {
+  background: linear-gradient(90deg, #00e6ff, #9f6cff);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 230, 255, 0.3);
+}
+
+.game-status {
+  font-size: 1.2rem;
+  color: #00e6ff;
+  animation: pulse 1.5s infinite;
+}
+
+.performance-chart {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.performance-chart h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00e6ff;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}

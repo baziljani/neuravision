@@ -1,0 +1,74 @@
+.typing-challenge {
+  background: radial-gradient(circle at top left, #5b247a, #1bcedf);
+  color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  margin: 40px auto;
+  max-width: 550px;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.word-display {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #ffeb3b;
+  text-shadow: 0 0 15px rgba(255, 255, 0, 0.6);
+}
+
+input[type="text"] {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 250px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 15px #fff;
+  transform: scale(1.05);
+}
+
+button {
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #1bcedf, #5b247a);
+  transform: scale(1.08);
+}
+
+.results {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

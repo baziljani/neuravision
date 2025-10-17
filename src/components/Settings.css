@@ -1,0 +1,54 @@
+.settings-container {
+  padding: 20px;
+  width: 100%;
+}
+
+.settings-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.settings-section {
+  background: linear-gradient(145deg, #1a1f2c, #232934);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.settings-section h3 {
+  color: #00e6ff;
+  margin-bottom: 20px;
+}
+
+.setting-item {
+  margin: 15px 0;
+}
+
+.setting-item label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.setting-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.setting-item select {
+  background: #2a2f3a;
+  border: 1px solid #3a3f4a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.setting-item select:focus {
+  outline: none;
+  border-color: #00e6ff;
+}

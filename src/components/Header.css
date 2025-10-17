@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  animation: headerGlow 3s infinite alternate ease-in-out;
+}
+
+@keyframes headerGlow {
+  from { box-shadow: 0 0 20px rgba(0, 255, 255, 0.1); }
+  to { box-shadow: 0 0 40px rgba(0, 255, 255, 0.4); }
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #00e6ff, #9f6cff, #ff00c8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: hueRotate 6s linear infinite;
+}
+
+@keyframes hueRotate {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}   
+
+.header button {
+  background: linear-gradient(90deg, #6c63ff, #00e6ff);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.header button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+}
